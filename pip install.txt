@@ -1,0 +1,9 @@
+pip install --upgrade pip
+pip install bs4
+pip install pyyaml
+pip install wheel
+pip install requests
+pip install swampy
+pip install ipykernel
+pip install yapf
+pip install selenium
