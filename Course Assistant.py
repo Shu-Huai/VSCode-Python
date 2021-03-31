@@ -3,8 +3,7 @@ from bs4 import BeautifulSoup
 import os, time
 
 
-def take_lessons(driver_path, url, username, password, lesson_id, teacher_id,
-                 campus, fucy):
+def take_lessons(driver_path, url, username, password, lesson_id, teacher_id, campus, fucy):
     chromedriver = driver_path.strip()
     os.environ['webdriver.Chrome.driver'] = chromedriver
     driver = webdriver.Chrome(chromedriver)
@@ -19,12 +18,10 @@ def take_lessons(driver_path, url, username, password, lesson_id, teacher_id,
             return 0
         else:
             time.sleep(60)
-            take_lessons(driver_path, url, username, password, lesson_id,
-                         teacher_id, campus)
+            take_lessons(driver_path, url, username, password, lesson_id, teacher_id, campus)
     except:
         time.sleep(60)
-        take_lessons(driver_path, url, username, password, lesson_id,
-                     teacher_id, campus)
+        take_lessons(driver_path, url, username, password, lesson_id, teacher_id, campus)
 
 
 def login(username, password, driver):
@@ -46,8 +43,7 @@ def login(username, password, driver):
 
 def choose_lesson(driver, lesson_id, teacher_id, campus, fucy):
     start_time = time.time()
-    driver.get(
-        'http://xk.autoisp.shu.edu.cn/CourseSelectionStudent/FuzzyQuery')
+    driver.get('http://xk.autoisp.shu.edu.cn/CourseSelectionStudent/FuzzyQuery')
     time.sleep(2)
     driver.find_element_by_name('CID').send_keys(lesson_id)
     time.sleep(1)
@@ -71,16 +67,12 @@ def choose_lesson(driver, lesson_id, teacher_id, campus, fucy):
                         limit = str(list(i)[index - 4]).split('>')[-2][:-4]
                         print('人数：{}    容量：{}'.format(selected, limit))
                         if limit != selected:
-                            driver.find_element_by_class_name(
-                                'rowchecker').click()
+                            driver.find_element_by_class_name('rowchecker').click()
                             time.sleep(0.1)
-                            driver.find_element_by_id(
-                                'CourseCheckAction').click()
+                            driver.find_element_by_id('CourseCheckAction').click()
                             end_time = time.time()
-                            driver.get_screenshot_as_file(
-                                './Course Assistant.png')
-                            print('恭喜，选课成功，共尝试%d次，共用%.3f秒钟' %
-                                  (cout, (end_time - start_time)))
+                            driver.get_screenshot_as_file('./Course Assistant.png')
+                            print('恭喜，选课成功，共尝试%d次，共用%.3f秒钟' % (cout, (end_time - start_time)))
                             driver.quit()
                             return 0
 
@@ -95,11 +87,4 @@ if __name__ == '__main__':
     teacher_id = '1000'
     campus = '宝山'
     fucy = 0.5
-    take_lessons(driver_path=driver_path,
-                 url=lessons_url,
-                 username=username,
-                 password=password,
-                 lesson_id=lesson_id,
-                 teacher_id=teacher_id,
-                 campus=campus,
-                 fucy=fucy)
+    take_lessons(driver_path=driver_path, url=lessons_url, username=username, password=password, lesson_id=lesson_id, teacher_id=teacher_id, campus=campus, fucy=fucy)

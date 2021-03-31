@@ -53,6 +53,6 @@ List1 = ['a', 'b', 'c']
 print("3, 'a' in zip: ", (3, 'a') in zip(List0, List1))
 for a, b in zip(List0, List1):
     print(a, b)
-s1='programming'
-s2='language'
+s1 = 'programming'
+s2 = 'language'
 print(s1.capitalize() + ' ' + s2.upper())
