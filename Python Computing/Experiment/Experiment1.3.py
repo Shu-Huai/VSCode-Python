@@ -1,15 +1,12 @@
 number = int(input("Please input a number: "))
 if number > 99 and number < 1000:
-    print("Hundreds: ", number // 100, " Tens: ", number // 10 % 10, " Ones: ",
-          number % 10)
+    print("Hundreds: ", number // 100, " Tens: ", number // 10 % 10, " Ones: ", number % 10)
 import math
 
 numbers = input("Please input a, b, and angle: ")
-a, b, angle = float(numbers.split()[0]), float(numbers.split()[1]), float(
-    numbers.split()[2])
+a, b, angle = float(numbers.split()[0]), float(numbers.split()[1]), float(numbers.split()[2])
 if a > 0 and b > 0 and angle > 0:
-    print("c is: ",
-          math.sqrt(a**2 + b**2 - 2 * a * b * math.cos(angle * math.pi / 180)))
+    print("c is: ", math.sqrt(a**2 + b**2 - 2 * a * b * math.cos(angle * math.pi / 180)))
 words = input("Please input three words: ")
 a, b, c = sorted([words.split()[0], words.split()[1], words.split()[2]])
 print(a, b, c)
