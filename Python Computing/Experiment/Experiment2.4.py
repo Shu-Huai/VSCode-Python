@@ -2,17 +2,17 @@ file = open("D:\Visual Studio Code\Visual-Studio-Code-Python\Python Computing\Ex
 words = file.readlines()
 for i in range(len(words)):
     words[i] = words[i].replace('\n', '')
-reversedWords = []
+savedWords = []
 wordsCount = []
 for word in words:
-    if word not in reversedWords:
-        reversedWords.append(word)
+    if word not in savedWords:
+        savedWords.append(word)
         wordsCount.append(1)
     else:
-        wordsCount[reversedWords.index(word)] = wordsCount[reversedWords.index(word)] + 1
+        wordsCount[savedWords.index(word)] = wordsCount[savedWords.index(word)] + 1
 print('Frequency of occurrence of the words in "CountingWords.txt":')
-for i in range(len(reversedWords)):
-    print(reversedWords[i] + ": " + str(wordsCount[i]))
+for i in range(len(savedWords)):
+    print(savedWords[i] + ": " + str(wordsCount[i]))
 file.close()
 file = open("D:\Visual Studio Code\Visual-Studio-Code-Python\Python Computing\Experiment\CountingWords.txt")
 words = file.readlines()
