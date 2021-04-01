@@ -18,3 +18,4 @@ for line in lines:
             reversedwords.append(line)
             reversedwords.append(compareline)
             print("(" + line + ", " + compareline + ")")
+file.close()
