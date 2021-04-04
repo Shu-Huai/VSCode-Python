@@ -56,3 +56,14 @@ for a, b in zip(List0, List1):
 s1 = 'programming'
 s2 = 'language'
 print(s1.capitalize() + ' ' + s2.upper())
+freshfruit = [' banana', ' loganberry ', 'passion fruit ']
+freshfruit = [w.strip(" ") for w in freshfruit]
+print(freshfruit)
+vector = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+vector = [num for elem in vector for num in elem]
+print(vector)
+import os
+
+files = [filename for filename in os.listdir(".") if filename.endswith(".py")]
+print(files)
+del os
