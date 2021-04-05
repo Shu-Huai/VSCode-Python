@@ -214,6 +214,8 @@ while guessNumber != number:
     if guessNumber < number:
         print("Too small.")
 print("Congratulations! You win.")
+
+
 # %%
 def Fibonacci(n):
     a = 0
