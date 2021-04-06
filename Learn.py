@@ -230,3 +230,52 @@ for i in range(1, 21):
     print("Number %d: " % i, end="")
     print(Fibonacci(i - 1))
 # %%
+i = 100
+while i >= 100 and i < 1000:
+    if (i // 100)**3 + (i % 100 // 10)**3 + (i % 10)**3 == i:
+        print(i)
+    i += 1
+# %%
+n = int(input("Please input a number: "))
+n -= n % 23
+if n <= 0:
+    n = 0
+print("The max number is: %d" % n)
+# %%
+formatCount = 0
+for i in range(2, 1000):
+    flag = 0
+    for j in range(2, i):
+        if not i % j:
+            flag = 1
+            break
+    if not flag:
+        print("%3d" % i, end=" ")
+        formatCount += 1
+        if not formatCount % 10:
+            print("\n", end="")
+# %%
+c = 0
+while not c == "#":
+    c = input("Please input a char: ")
+    if not c == "#":
+        print("The char is: %s" % c)
+print("Input ends.")
+# %%
+inputList = []
+oddSum = 0
+evenSum = 0
+while not len(inputList) or not inputList[len(inputList) - 1] == -1:
+    n = int(input("Please input a number: "))
+    inputList.append(n)
+    if n == -1:
+        pass
+    elif n % 2:
+        oddSum += n
+    else:
+        evenSum += n
+inputList.pop()
+print("The list is: ", end="")
+print(inputList)
+print("The odd sum = %d, the even sum = %d." % (oddSum, evenSum))
+# %%

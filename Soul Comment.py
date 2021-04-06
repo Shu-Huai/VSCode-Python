@@ -1,5 +1,6 @@
 import requests
 from bs4 import BeautifulSoup
+from urllib3.packages.six import _SixMetaPathImporter
 
 url = []
 for start_value in range(0, 220, 20):
@@ -14,13 +15,12 @@ short_comment = []
 for i in range(len(url)):
     r.append(requests.get(url[i], headers=headers))
     soup.append(BeautifulSoup(r[i].text, "html.parser"))
-    short_comment.append(soup[i].find_all('span', class_='short'))
-comment_list = []
+    short_comment.extend(soup[i].find_all('span', class_='short'))
 for i in range(len(short_comment)):
-    for j in range(len(short_comment[i])):
-        comment_list.append(short_comment[i][j].string)
+    short_comment[i] = short_comment[i].string
+    print(short_comment[i])
 filename = 'Soul Comment.txt'
 open(filename, 'w+', encoding='utf-8')
-for i in range(len(comment_list)):
+for i in range(len(short_comment)):
     with open(filename, 'a+', encoding='utf-8') as file_object:
-        file_object.write(str(i + 1) + '. ' + comment_list[i] + '\n\n')
+        file_object.write(str(i + 1) + '. ' + short_comment[i] + '\n\n')
