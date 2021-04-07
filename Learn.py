@@ -182,15 +182,15 @@ else:
     second = str(second)
 print("The time after one second is: " + hour + ":" + minute + ":" + second)
 # %%
-sum = 0
+scoreSum = 0
 n = 1
 print("n\ts")
-while sum <= 1000:
-    sum += n**2
-    print("%d\t%d" % (n, sum))
+while scoreSum <= 1000:
+    scoreSum += n**2
+    print("%d\t%d" % (n, scoreSum))
     n += 1
 n -= 1
-if sum > 1000:
+if scoreSum > 1000:
     n -= 1
 print("The max n is: %d" % n)
 # %%
@@ -225,7 +225,7 @@ def Fibonacci(n):
     return a
 
 
-sum = 0
+scoreSum = 0
 for i in range(1, 21):
     print("Number %d: " % i, end="")
     print(Fibonacci(i - 1))
@@ -256,16 +256,16 @@ for i in range(2, 1000):
             print("\n", end="")
 # %%
 c = 0
-while not c == "#":
+while c != "#":
     c = input("Please input a char: ")
-    if not c == "#":
+    if c != "#":
         print("The char is: %s" % c)
 print("Input ends.")
 # %%
 inputList = []
 oddSum = 0
 evenSum = 0
-while not len(inputList) or not inputList[len(inputList) - 1] == -1:
+while not len(inputList) or inputList[len(inputList) - 1] != -1:
     n = int(input("Please input a number: "))
     inputList.append(n)
     if n == -1:
@@ -278,4 +278,117 @@ inputList.pop()
 print("The list is: ", end="")
 print(inputList)
 print("The odd sum = %d, the even sum = %d." % (oddSum, evenSum))
+# %%
+scoreList = [68, 75, 32, 99, 78, 45, 88, 72, 83, 78]
+scoreLevel = dict(Excellent=0, Good=0, Middle=0, Bad=0)
+for score in scoreList:
+    if score >= 90 and score <= 100:
+        scoreLevel["Excellent"] += 1
+    elif score >= 80 and score <= 89:
+        scoreLevel["Good"] += 1
+    elif score >= 60 and score <= 79:
+        scoreLevel["Middle"] += 1
+    elif score >= 0 and score <= 59:
+        scoreLevel["Bad"] += 1
+for i in range(len(scoreLevel)):
+    print(list(scoreLevel.keys())[i], end="")
+    print(": ", end="")
+    print(list(scoreLevel.values())[i], end="")
+    if i == len(scoreLevel) - 1:
+        print(".\n", end="")
+    else:
+        print(", ", end="")
+# %%
+scoreSum = 0
+max = -1
+min = 121
+count = 0
+n = 0
+while n != -1:
+    n = float(input("Please input a score, ends with -1: "))
+    if n == -1:
+        break
+    if n > max:
+        max = n
+    if n < min:
+        min = n
+    scoreSum += n
+    count += 1
+print("The average score is: %.2f.\nThe max score is: %.2f.\nThe min score is: %.2f." % (scoreSum / count, max, min))
+# %%
+count = 0
+numbers = []
+while count < 10:
+    a = int(input("Please input ten numbers: "))
+    if a % 2 != 0:
+        numbers.append(a)
+        count += 1
+    else:
+        print("输入的不是奇数")
+print("The list is: ", numbers)
+print("The sum is: ", sum(numbers))
+print("The average is: ", sum(numbers) / len(numbers))
+# %%
+stringList = ["Beautiful is better than ugly.", "Explicit is better than implicit.", "Simple is better than complex.", "Complex is better than complicated."]
+inputString = input("Please input the start and end: ")
+startIndex, endIndex = int(inputString.split()[0]), int(inputString.split()[1])
+for string in stringList:
+    print("The string is: %s, the length is: %d, the substring is: %s." % (string, len(string), string[startIndex - 1:endIndex]))
+# %%
+string = input("Please input a string: ")
+print("The new string is: %s" % string[::2])
+# %%
+inputString = input('Please input the temperatures, splitting with ", ": ')
+temperatureList = inputString.split(", ")
+temperatureSum = 0
+for temperature in temperatureList:
+    temperatureSum += float(temperature)
+print("The average temperature is: %.2f." % (temperatureSum / len(temperatureList)))
+# %%
+string = input("Please input a string: ")
+capitalChar = 0
+smallChar = 0
+number = 0
+other = 0
+for char in string:
+    if char > 'A' and char < 'Z':
+        capitalChar += 1
+    elif char > 'a' and char < 'z':
+        smallChar += 1
+    elif char > '0' and char < '9':
+        number += 1
+    else:
+        other += 1
+print("The capital char is: %d, the small char is: %d, the number is: %d, the other is: %d." % (capitalChar, smallChar, number, other))
+
+
+# %%
+def PrintChars(startChar, endChar, number):
+    outputChar = startChar
+    formatCount = 0
+    while outputChar <= endChar:
+        print(outputChar, end=" ")
+        outputChar = chr(ord(outputChar) + 1)
+        formatCount += 1
+        if not formatCount % number:
+            print("\n", end="")
+
+
+print("The output is:")
+PrintChars("!", "9", 10)
+
+
+# %%
+def IsPrime(number):
+    for i in range(2, number):
+        if not number % i:
+            return 0
+    return 1
+
+
+number = int(input("Please input a number: "))
+if IsPrime(number):
+    print("%d is prime." % number)
+else:
+    print("%d is not prime." % number)
 # %%
