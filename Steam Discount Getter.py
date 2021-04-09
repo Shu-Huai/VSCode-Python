@@ -2,14 +2,6 @@ import requests
 from bs4 import BeautifulSoup
 
 
-def GetUrls(pages):
-    urls = []
-    for i in range(pages):
-        urlExample = "https://store.steampowered.com/search/?specials=1&page={}".format(i + 1)
-        urls.append(urlExample)
-    return urls
-
-
 def GetMaxPage():
     url = []
     url.append("https://store.steampowered.com/search/?specials=1&page=1")
@@ -18,12 +10,23 @@ def GetMaxPage():
     return int(node[0].contents[5].contents[0])
 
 
+def GetUrls(pages):
+    urls = []
+    for i in range(pages):
+        urlExample = "https://store.steampowered.com/search/?specials=1&page={}".format(i + 1)
+        urls.append(urlExample)
+    return urls
+
+
 def GetContent(urls):
     headers = {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.116 Safari/537.36'}
     responseList = []
     contentList = []
     for i in range(len(urls)):
-        responseList.append(requests.get(urls[i], headers=headers))
+        try:
+            responseList.append(requests.get(urls[i], headers=headers))
+        except ConnectionError:
+            break
         contentList.append(responseList[i].text)
     return contentList
 
@@ -99,9 +102,11 @@ def Sort(games):
 
 
 pages = input("Please input the pages you want, min is 1, max is %d, default is 5: " % GetMaxPage())
-if pages == "":
-    pages = "5"
-urls = GetUrls(int(pages))
+try:
+    pages = int(pages)
+except ValueError:
+    pages = 5
+urls = GetUrls(pages)
 contentList = GetContent(urls)
 gameNames = GetGameName(contentList)
 gameUrls = GetGameUrl(contentList)

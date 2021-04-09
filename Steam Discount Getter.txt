@@ -47,10 +47,6 @@ Game: Sid Meier’s Civilization® VI.
 Link: https://store.steampowered.com/app/289070/Sid_Meiers_Civilization_VI/?snr=1_7_7_2300_150_1.
 Discount: -75%, Price: ¥ 49, Previous Price: ¥ 199.
 
-Game: Steel Division: Normandy 44.
-Link: https://store.steampowered.com/app/572410/Steel_Division_Normandy_44/?snr=1_7_7_2300_150_5.
-Discount: -75%, Price: ¥ 28, Previous Price: ¥ 112.
-
 Game: ONEONE1 Bundle.
 Link: https://store.steampowered.com/bundle/5346/ONEONE1_Bundle/?snr=1_7_7_2300_150_4.
 Discount: -74%, Price: ¥ 14.45, Previous Price: ¥ 56.
@@ -108,7 +104,7 @@ Link: https://store.steampowered.com/app/310950/Street_Fighter_V/?snr=1_7_7_2300
 Discount: -61%, Price: ¥ 44, Previous Price: ¥ 112.
 
 Game: The Elder Scrolls® Online.
-Link: https://store.steampowered.com/app/306130/The_Elder_Scrolls_Online/?snr=1_7_7_2300_150_2.
+Link: https://store.steampowered.com/app/306130/The_Elder_Scrolls_Online/?snr=1_7_7_2300_150_3.
 Discount: -61%, Price: ¥ 27, Previous Price: ¥ 69.
 
 Game: Control Ultimate Edition.
@@ -148,11 +144,11 @@ Link: https://store.steampowered.com/app/880950/MaitetsuPure_Station/?snr=1_7_7_
 Discount: -56%, Price: ¥ 34, Previous Price: ¥ 78.
 
 Game: The Sims™ 4 Bundle - Get to Work, Dine Out, Cool Kitchen Stuff.
-Link: https://store.steampowered.com/bundle/15529/The_Sims_4_Bundle__Get_to_Work_Dine_Out_Cool_Kitchen_Stuff/?snr=1_7_7_2300_150_4.
+Link: https://store.steampowered.com/bundle/15529/The_Sims_4_Bundle__Get_to_Work_Dine_Out_Cool_Kitchen_Stuff/?snr=1_7_7_2300_150_3.
 Discount: -56%, Price: ¥ 163.30, Previous Price: ¥ 374.
 
 Game: Barotrauma.
-Link: https://store.steampowered.com/app/602960/Barotrauma/?snr=1_7_7_2300_150_4.
+Link: https://store.steampowered.com/app/602960/Barotrauma/?snr=1_7_7_2300_150_5.
 Discount: -55%, Price: ¥ 40, Previous Price: ¥ 89.
 
 Game: Mirror: The Lost Shards.
@@ -164,7 +160,7 @@ Link: https://store.steampowered.com/bundle/15308/Dead_by_Daylight__Silent_Hill_
 Discount: -54%, Price: ¥ 101.70, Previous Price: ¥ 222.
 
 Game: Hunt: Showdown - Deluxe Edition.
-Link: https://store.steampowered.com/bundle/18768/Hunt_Showdown__Deluxe_Edition/?snr=1_7_7_2300_150_3.
+Link: https://store.steampowered.com/bundle/18768/Hunt_Showdown__Deluxe_Edition/?snr=1_7_7_2300_150_4.
 Discount: -54%, Price: ¥ 111.54, Previous Price: ¥ 245.
 
 Game: Hunt: Showdown - Collector's Edition.
@@ -172,7 +168,7 @@ Link: https://store.steampowered.com/bundle/12841/Hunt_Showdown__Collectors_Edit
 Discount: -53%, Price: ¥ 324.10, Previous Price: ¥ 683.
 
 Game: Astellia.
-Link: https://store.steampowered.com/app/1185560/Astellia/?snr=1_7_7_2300_150_4.
+Link: https://store.steampowered.com/app/1185560/Astellia/?snr=1_7_7_2300_150_5.
 Discount: -50%, Price: ¥ 95, Previous Price: ¥ 191.
 
 Game: Children of Morta.
@@ -185,6 +181,10 @@ Discount: -50%, Price: ¥ 41, Previous Price: ¥ 82.
 
 Game: Destiny 2: Forsaken.
 Link: https://store.steampowered.com/app/1090150/Destiny_2_Forsaken/?snr=1_7_7_2300_150_5.
+Discount: -50%, Price: ¥ 40, Previous Price: ¥ 80.
+
+Game: Destiny 2: Shadowkeep.
+Link: https://store.steampowered.com/app/1090200/Destiny_2_Shadowkeep/?snr=1_7_7_2300_150_5.
 Discount: -50%, Price: ¥ 40, Previous Price: ¥ 80.
 
 Game: HELLDIVERS™ Dive Harder Edition.
@@ -208,7 +208,7 @@ Link: https://store.steampowered.com/app/703080/Planet_Zoo/?snr=1_7_7_2300_150_1
 Discount: -50%, Price: ¥ 90, Previous Price: ¥ 180.
 
 Game: TerraTech.
-Link: https://store.steampowered.com/app/285920/TerraTech/?snr=1_7_7_2300_150_5.
+Link: https://store.steampowered.com/app/285920/TerraTech/?snr=1_7_7_2300_150_4.
 Discount: -50%, Price: ¥ 40, Previous Price: ¥ 80.
 
 Game: The Binding of Isaac: Afterbirth.
@@ -216,7 +216,7 @@ Link: https://store.steampowered.com/app/401920/The_Binding_of_Isaac_Afterbirth/
 Discount: -50%, Price: ¥ 19, Previous Price: ¥ 38.
 
 Game: The Binding of Isaac: Afterbirth+ Bundle.
-Link: https://store.steampowered.com/bundle/18726/The_Binding_of_Isaac_Afterbirth_Bundle/?snr=1_7_7_2300_150_3.
+Link: https://store.steampowered.com/bundle/18726/The_Binding_of_Isaac_Afterbirth_Bundle/?snr=1_7_7_2300_150_2.
 Discount: -50%, Price: ¥ 61, Previous Price: ¥ 122.
 
 Game: The Binding of Isaac: Rebirth.
@@ -256,11 +256,11 @@ Link: https://store.steampowered.com/app/1235734/The_Sims_4_Get_To_Work/?snr=1_7
 Discount: -50%, Price: ¥ 99, Previous Price: ¥ 198.
 
 Game: The Sims™ 4 Get Together.
-Link: https://store.steampowered.com/app/1235732/The_Sims_4_Get_Together/?snr=1_7_7_2300_150_4.
+Link: https://store.steampowered.com/app/1235732/The_Sims_4_Get_Together/?snr=1_7_7_2300_150_3.
 Discount: -50%, Price: ¥ 99, Previous Price: ¥ 198.
 
 Game: The Sims™ 4 Island Living.
-Link: https://store.steampowered.com/app/1235730/The_Sims_4_Island_Living/?snr=1_7_7_2300_150_3.
+Link: https://store.steampowered.com/app/1235730/The_Sims_4_Island_Living/?snr=1_7_7_2300_150_4.
 Discount: -50%, Price: ¥ 99, Previous Price: ¥ 198.
 
 Game: The Sims™ 4 Seasons.
@@ -287,25 +287,25 @@ Game: Wasteland 3.
 Link: https://store.steampowered.com/app/719040/Wasteland_3/?snr=1_7_7_2300_150_3.
 Discount: -50%, Price: ¥ 134, Previous Price: ¥ 268.
 
+Game: 灵魂筹码 Soul at Stake.
+Link: https://store.steampowered.com/app/690530/_Soul_at_Stake/?snr=1_7_7_2300_150_5.
+Discount: -50%, Price: ¥ 33, Previous Price: ¥ 66.
+
 Game: Die by the Blade.
 Link: https://store.steampowered.com/bundle/20591/Die_by_the_Blade/?snr=1_7_7_2300_150_5.
 Discount: -48%, Price: ¥ 88.20, Previous Price: ¥ 170.
 
 Game: The Sims™ 4 Outdoor Bundle — Island Living, Outdoor Retreat, and Backyard Stuff.
-Link: https://store.steampowered.com/bundle/18878/The_Sims_4_Outdoor_Bundle__Island_Living_Outdoor_Retreat_and_Backyard_Stuff/?snr=1_7_7_2300_150_3.
+Link: https://store.steampowered.com/bundle/18878/The_Sims_4_Outdoor_Bundle__Island_Living_Outdoor_Retreat_and_Backyard_Stuff/?snr=1_7_7_2300_150_4.
 Discount: -48%, Price: ¥ 195.50, Previous Price: ¥ 374.
 
 Game: The Sims™ 4 Starter Bundle — Seasons, Parenthood, Tiny Living Stuff.
-Link: https://store.steampowered.com/bundle/18880/The_Sims_4_Starter_Bundle__Seasons_Parenthood_Tiny_Living_Stuff/?snr=1_7_7_2300_150_5.
+Link: https://store.steampowered.com/bundle/18880/The_Sims_4_Starter_Bundle__Seasons_Parenthood_Tiny_Living_Stuff/?snr=1_7_7_2300_150_4.
 Discount: -48%, Price: ¥ 195.50, Previous Price: ¥ 374.
 
 Game: Unheard疑案追声 本体+DLC合集包（Chinese Version）.
 Link: https://store.steampowered.com/bundle/13175/Unheard_DLCChinese_Version/?snr=1_7_7_2300_150_3.
 Discount: -47%, Price: ¥ 34.20, Previous Price: ¥ 64.
-
-Game: The Sims™ 4 Sims’ Night Out Bundle — Get Together, Dine Out, Movie Hangout Stuff, Bowling Night Stuff.
-Link: https://store.steampowered.com/bundle/18881/The_Sims_4_Sims_Night_Out_Bundle__Get_Together_Dine_Out_Movie_Hangout_Stuff_Bowling_Night_Stuff/?snr=1_7_7_2300_150_5.
-Discount: -46%, Price: ¥ 232.05, Previous Price: ¥ 432.
 
 Game: Spiritfarer® Digital Deluxe Edition.
 Link: https://store.steampowered.com/bundle/15928/Spiritfarer_Digital_Deluxe_Edition/?snr=1_7_7_2300_150_3.
@@ -372,7 +372,7 @@ Link: https://store.steampowered.com/app/972660/Spiritfarer/?snr=1_7_7_2300_150_
 Discount: -34%, Price: ¥ 59, Previous Price: ¥ 90.
 
 Game: Destiny 2: Beyond Light.
-Link: https://store.steampowered.com/app/1314563/Destiny_2_Beyond_Light/?snr=1_7_7_2300_150_5.
+Link: https://store.steampowered.com/app/1314563/Destiny_2_Beyond_Light/?snr=1_7_7_2300_150_4.
 Discount: -33%, Price: ¥ 112, Previous Price: ¥ 168.
 
 Game: Pacify.
@@ -396,12 +396,8 @@ Link: https://store.steampowered.com/app/1448260/_/?snr=1_7_7_2300_150_3.
 Discount: -30%, Price: ¥ 48, Previous Price: ¥ 69.
 
 Game: Medieval Dynasty - Digital Supporter Edition.
-Link: https://store.steampowered.com/bundle/16211/Medieval_Dynasty__Digital_Supporter_Edition/?snr=1_7_7_2300_150_4.
+Link: https://store.steampowered.com/bundle/16211/Medieval_Dynasty__Digital_Supporter_Edition/?snr=1_7_7_2300_150_3.
 Discount: -28%, Price: ¥ 89.10, Previous Price: ¥ 124.
-
-Game: Spiritfarer® - Digital Artbook.
-Link: https://store.steampowered.com/app/1398770/Spiritfarer__Digital_Artbook/?snr=1_7_7_2300_150_5.
-Discount: -27%, Price: ¥ 27, Previous Price: ¥ 37.
 
 Game: Unheard疑案追声 - 黑面观音.
 Link: https://store.steampowered.com/app/1205600/Unheard/?snr=1_7_7_2300_150_4.
@@ -416,7 +412,7 @@ Link: https://store.steampowered.com/app/1238440/Planet_Zoo_South_America_Pack/?
 Discount: -26%, Price: ¥ 38.86, Previous Price: ¥ 52.86.
 
 Game: The Sims™ 4 Vintage Glamour Stuff.
-Link: https://store.steampowered.com/app/1235751/The_Sims_4_Vintage_Glamour_Stuff/?snr=1_7_7_2300_150_4.
+Link: https://store.steampowered.com/app/1235751/The_Sims_4_Vintage_Glamour_Stuff/?snr=1_7_7_2300_150_5.
 Discount: -26%, Price: ¥ 43, Previous Price: ¥ 58.
 
 Game: Football Manager 2021.
@@ -436,11 +432,11 @@ Link: https://store.steampowered.com/app/1235746/The_Sims_4_Realm_of_Magic/?snr=
 Discount: -25%, Price: ¥ 88, Previous Price: ¥ 118.
 
 Game: Space Engineers Ultimate Edition.
-Link: https://store.steampowered.com/bundle/12999/Space_Engineers_Ultimate_Edition/?snr=1_7_7_2300_150_5.
+Link: https://store.steampowered.com/bundle/12999/Space_Engineers_Ultimate_Edition/?snr=1_7_7_2300_150_4.
 Discount: -24%, Price: ¥ 160.65, Previous Price: ¥ 210.
 
 Game: For The King: Lost Civilization Adventure Pack.
-Link: https://store.steampowered.com/app/1433560/For_The_King_Lost_Civilization_Adventure_Pack/?snr=1_7_7_2300_150_5.
+Link: https://store.steampowered.com/app/1433560/For_The_King_Lost_Civilization_Adventure_Pack/?snr=1_7_7_2300_150_4.
 Discount: -23%, Price: ¥ 20, Previous Price: ¥ 26.
 
 Game: Hunt: Showdown - Legends of the Bayou.
@@ -460,7 +456,7 @@ Link: https://store.steampowered.com/app/1471590/Planet_Zoo_Aquatic_Pack/?snr=1_
 Discount: -21%, Price: ¥ 42, Previous Price: ¥ 53.
 
 Game: 8Doors: Arum's Afterlife Adventure.
-Link: https://store.steampowered.com/app/668550/8Doors_Arums_Afterlife_Adventure/?snr=1_7_7_2300_150_4.
+Link: https://store.steampowered.com/app/668550/8Doors_Arums_Afterlife_Adventure/?snr=1_7_7_2300_150_5.
 Discount: -20%, Price: ¥ 56, Previous Price: ¥ 70.
 
 Game: Medieval Dynasty.
@@ -471,6 +467,10 @@ Game: Muse Dash - Just as planned.
 Link: https://store.steampowered.com/app/1055810/Muse_Dash__Just_as_planned/?snr=1_7_7_2300_150_2.
 Discount: -20%, Price: ¥ 144, Previous Price: ¥ 180.
 
+Game: 球球少女/Pinball Girls.
+Link: https://store.steampowered.com/app/1349120/Pinball_Girls/?snr=1_7_7_2300_150_5.
+Discount: -19%, Price: ¥ 13, Previous Price: ¥ 16.
+
 Game: Cute Honey 3.
 Link: https://store.steampowered.com/app/1543080/Cute_Honey_3/?snr=1_7_7_2300_150_5.
 Discount: -17%, Price: ¥ 10, Previous Price: ¥ 12.
@@ -480,7 +480,7 @@ Link: https://store.steampowered.com/app/1104280/The_Slormancer/?snr=1_7_7_2300_
 Discount: -16%, Price: ¥ 42, Previous Price: ¥ 50.
 
 Game: UGCW Loyalty Bonus.
-Link: https://store.steampowered.com/bundle/18789/UGCW_Loyalty_Bonus/?snr=1_7_7_2300_150_4.
+Link: https://store.steampowered.com/bundle/18789/UGCW_Loyalty_Bonus/?snr=1_7_7_2300_150_5.
 Discount: -15%, Price: ¥ 169.20, Previous Price: ¥ 198.
 
 Game: Cozy Grove.
