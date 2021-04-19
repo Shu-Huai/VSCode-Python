@@ -1,6 +1,5 @@
 import requests
 from bs4 import BeautifulSoup
-from urllib3.packages.six import _SixMetaPathImporter
 
 url = []
 for start_value in range(0, 220, 20):
