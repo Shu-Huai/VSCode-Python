@@ -1,4 +1,4 @@
-file = open("D:\Visual Studio Code\Visual-Studio-Code-Python\Python Computing\Experiment\CountingWords.txt")
+file = open("D:\Visual Studio Code\Visual-Studio-Code-Python\Python Computing\Experiment\Counting Words.txt")
 words = file.readlines()
 for i in range(len(words)):
     words[i] = words[i].replace('\n', '')
@@ -14,7 +14,7 @@ print('Frequency of occurrence of the words in "CountingWords.txt":')
 for i in range(len(savedWords)):
     print(savedWords[i] + ": " + str(wordsCount[i]))
 file.close()
-file = open("D:\Visual Studio Code\Visual-Studio-Code-Python\Python Computing\Experiment\CountingWords.txt")
+file = open("D:\Visual Studio Code\Visual-Studio-Code-Python\Python Computing\Experiment\Counting Words.txt")
 words = file.readlines()
 for i in range(len(words)):
     words[i] = words[i].replace('\n', '')

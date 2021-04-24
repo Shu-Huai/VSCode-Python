@@ -7,7 +7,7 @@ def Compare(word, compareWord):
     return 1
 
 
-file = open("D:\Visual Studio Code\Visual-Studio-Code-Python\Python Computing\Experiment\words.txt")
+file = open(r".\Python Computing\Experiment\words.txt")
 words = file.readlines()
 for i in range(len(words)):
     words[i] = words[i].replace('\n', '')
