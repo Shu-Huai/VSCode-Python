@@ -116,7 +116,7 @@ games = Sort(games)
 for i in range(len(games)):
     print("Game: %s.\nLink: %s." % (games[i]["gameName"], games[i]["gameUrl"]))
     print("Discount: %s, Price: %s, Previous Price: %s.\n" % (games[i]["discount"], games[i]["nowPrice"], games[i]["previousPrice"]))
-filename = "Steam Discount Getter.txt"
+filename = "Steam Discount Getter.md"
 with open(filename, 'w', encoding='utf-8') as file_object:
     file_object.write("Here is the Steam discount information for this week.\n")
     for i in range(len(games)):
