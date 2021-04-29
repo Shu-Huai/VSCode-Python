@@ -396,4 +396,13 @@ try:
         print("%d is not prime." % number)
 except Exception:
     print("%d is not prime and not prime." % number)
+
+
+# %%
+def TestDefalt(a=0):
+    print(a)
+
+
+b = 0
+TestDefalt(b=10)
 # %%
