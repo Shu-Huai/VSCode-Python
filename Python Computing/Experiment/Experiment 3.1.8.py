@@ -15,9 +15,8 @@ class Kangaroo(object):
 
 
 kangaroo = Kangaroo()
-testKangaroo = Kangaroo()
+babyKangaroo = Kangaroo()
 kangaroo.PutInPouch("wallet")
 kangaroo.PutInPouch("car keys")
-kangaroo.PutInPouch(testKangaroo)
-print(kangaroo)
-print(testKangaroo)
+kangaroo.PutInPouch(babyKangaroo)
+print(kangaroo, babyKangaroo)

@@ -48,20 +48,16 @@ class Time(object):
         return Time(hour, minute, second)
 
     def IsValid(self):
-        if self.__hour >= 24:
-            return False
-        if self.__minute >= 60:
-            return False
-        if self.__second >= 60:
+        if self.__hour >= 24 or self.__hour < 0 or self.__minute >= 60 or self.__minute < 0 or self.__second >= 60 or self.__second < 0:
             return False
         return True
 
 
-T = Time(0, 1, 30)
-print("Time is: %s." % T)
-print("Time + 00:00:30 = %s." % (T + Time(0, 0, 30)))
-print("Convert to second: %ds." % T.TimeToInt())
-T.PrintTime()
-print("Time is after 00:00:30:", T.IsAfter(Time(0, 0, 30)))
-print("Time after 120s is: %s." % T.Increment(120))
-print("Time is valid:", T.IsValid())
+nowTime = Time(0, 1, 30)
+print("Time is: %s." % nowTime)
+print("Time + 00:00:30 = %s." % (nowTime + Time(0, 0, 30)))
+print("Convert to second: %ds." % nowTime.TimeToInt())
+nowTime.PrintTime()
+print("Time is after 00:00:30:", nowTime.IsAfter(Time(0, 0, 30)))
+print("Time after 120s is: %s." % nowTime.Increment(120))
+print("Time is valid:", nowTime.IsValid())
