@@ -28,8 +28,8 @@ class Time(object):
     def PrintTime(self):
         print("Time is: %02d:%02d:%02d." % (self.hour, self.minute, self.second))
 
-    def IsAfter(self, T):
-        if self.TimeToInt() > T.TimeToInt():
+    def IsAfter(self, time):
+        if self.TimeToInt() > time.TimeToInt():
             return True
         return False
 
