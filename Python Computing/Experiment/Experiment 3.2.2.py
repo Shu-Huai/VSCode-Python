@@ -1,17 +1,17 @@
 class Time(object):
     def __init__(self, hour=0, minute=0, second=0) -> None:
         super().__init__()
-        self.__hour = hour
-        self.__minute = minute
-        self.__second = second
+        self.hour = hour
+        self.minute = minute
+        self.second = second
 
     def __str__(self):
-        return "%02d:%02d:%02d" % (self.__hour, self.__minute, self.__second)
+        return "%02d:%02d:%02d" % (self.hour, self.minute, self.second)
 
     def __add__(self, T):
-        hour = self.__hour + T.__hour
-        minute = self.__minute + T.__minute
-        second = self.__second + T.__second
+        hour = self.hour + T.hour
+        minute = self.minute + T.minute
+        second = self.second + T.second
         if second >= 60:
             second -= 60
             minute += 1
@@ -23,10 +23,10 @@ class Time(object):
         return Time(hour, minute, second)
 
     def TimeToInt(self):
-        return self.__second + 60 * self.__minute + 3600 * self.__hour
+        return self.second + 60 * self.minute + 3600 * self.hour
 
     def PrintTime(self):
-        print("Time is: %02d:%02d:%02d." % (self.__hour, self.__minute, self.__second))
+        print("Time is: %02d:%02d:%02d." % (self.hour, self.minute, self.second))
 
     def IsAfter(self, T):
         if self.TimeToInt() > T.TimeToInt():
@@ -36,9 +36,9 @@ class Time(object):
     def Increment(self, incrementSecond):
         if incrementSecond <= 0:
             return self
-        hour = self.__hour
-        minute = self.__minute
-        second = self.__second
+        hour = self.hour
+        minute = self.minute
+        second = self.second
         second += incrementSecond
         minute += second // 60
         second = second % 60
@@ -48,7 +48,7 @@ class Time(object):
         return Time(hour, minute, second)
 
     def IsValid(self):
-        if self.__hour >= 24 or self.__hour < 0 or self.__minute >= 60 or self.__minute < 0 or self.__second >= 60 or self.__second < 0:
+        if self.hour >= 24 or self.hour < 0 or self.minute >= 60 or self.minute < 0 or self.second >= 60 or self.second < 0:
             return False
         return True
 

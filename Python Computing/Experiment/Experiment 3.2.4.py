@@ -1,14 +1,14 @@
 class Customer(object):
     def __init__(self) -> None:
         super().__init__()
-        self.__foodList = []
+        self.foodList = []
 
     def PlaceOrder(self, employee, food):
-        return self.__foodList.append(employee.TakeOrder(food))
+        return self.foodList.append(employee.TakeOrder(food))
 
     def PrintFood(self):
         print("The food list is: ", end="")
-        for food in self.__foodList:
+        for food in self.foodList:
             print(food, end=" ")
         print(".\n", end="")
 
@@ -24,23 +24,23 @@ class Employee(object):
 class Food(object):
     def __init__(self, food) -> None:
         super().__init__()
-        self.__food =   food
+        self.food =   food
 
     def __str__(self):
-        return self.__food
+        return self.food
 
 
 class Lunch(object):
     def __init__(self) -> None:
         super().__init__()
-        self.__customer = Customer()
-        self.__employee = Employee()
+        self.customer = Customer()
+        self.employee = Employee()
 
     def Order(self, food):
-        self.__customer.PlaceOrder(self.__employee, food)
+        self.customer.PlaceOrder(self.employee, food)
 
     def Result(self):
-        self.__customer.PrintFood()
+        self.customer.PrintFood()
 
 
 lunch = Lunch()
