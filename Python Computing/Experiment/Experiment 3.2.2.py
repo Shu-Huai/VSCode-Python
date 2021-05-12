@@ -8,10 +8,10 @@ class Time(object):
     def __str__(self):
         return "%02d:%02d:%02d" % (self.hour, self.minute, self.second)
 
-    def __add__(self, T):
-        hour = self.hour + T.hour
-        minute = self.minute + T.minute
-        second = self.second + T.second
+    def __add__(self, time):
+        hour = self.hour + time.hour
+        minute = self.minute + time.minute
+        second = self.second + time.second
         if second >= 60:
             second -= 60
             minute += 1
