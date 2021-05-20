@@ -6,7 +6,7 @@ import os, time
 def take_lessons(driver_path, url, username, password, lesson_id, teacher_id, campus, fucy):
     chromedriver = driver_path.strip()
     os.environ['webdriver.Chrome.driver'] = chromedriver
-    driver = webdriver.Chrome(chromedriver)
+    driver = webdriver.Edge(chromedriver)
     try:
         driver.get(url)
         driver.refresh()
@@ -79,7 +79,7 @@ def choose_lesson(driver, lesson_id, teacher_id, campus, fucy):
 
 if __name__ == '__main__':
     '''请将自己的driver地址覆盖下面的默认地址'''
-    driver_path = r'./Course Assistant.exe'
+    driver_path = r'.vscode\EdgeDriver.exe'
     lessons_url = 'http://xk.autoisp.shu.edu.cn'
     username = '19120176'
     password = 'Prwq0421'
