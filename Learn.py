@@ -439,3 +439,15 @@ print(dir(a))
 print(dir(b))
 
 # %%
+currentDate = 2021 - 5 - 31
+print(currentDate)
+del currentDate
+print(currentDate)
+# %%
+a=(2,3)
+a[0]=10086
+# %%
+print("""adfgddg\n
+gfdvgfrdvgfr
+bgrdcv bg""")
+# %%
