@@ -14,10 +14,10 @@ def AddTitle(resultDocument, text, isCenter=True):
         resultDocument.add_paragraph()
 
 
-def AddChoice(resultDocument, paragraphs, numbers):
+def AddChoice(resultDocument, paragraphs, number):
     AddTitle(resultDocument, paragraphs[0].text, False)
     paragraphs.pop(0)
-    for i in range(numbers):
+    for i in range(number):
         answers = list(re.findall("[A-Z]", str(paragraphs[0].text)))
         resultDocument.add_paragraph(paragraphs[0].text)
         paragraphs.pop(0)
@@ -28,11 +28,11 @@ def AddChoice(resultDocument, paragraphs, numbers):
             selections += thisLine
             temp += 1
             thisLine = str(paragraphs[temp].text)
-        for i in range(temp):
+        for j in range(temp):
             paragraphs.pop(0)
         selections = list(re.findall("[A-Z][^A-Z]+", selections))
-        for i in range(len(selections)):
-            temp = selections[i].strip()
+        for j in range(len(selections)):
+            temp = selections[j].strip()
             newParagraph = resultDocument.add_paragraph()
             if temp[0] in answers:
                 newRun = newParagraph.add_run(temp)
@@ -44,10 +44,10 @@ def AddChoice(resultDocument, paragraphs, numbers):
     paragraphs.pop(0)
 
 
-def AddJudge(resultDocument, paragraphs, numbers):
+def AddJudge(resultDocument, paragraphs, number):
     AddTitle(resultDocument, paragraphs[0].text, False)
     paragraphs.pop(0)
-    for i in range(numbers):
+    for i in range(number):
         resultDocument.add_paragraph(paragraphs[0].text)
         paragraphs.pop(0)
 
