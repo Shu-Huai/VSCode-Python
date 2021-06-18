@@ -52,7 +52,7 @@ def AddJudge(resultDocument, paragraphs, numbers):
         paragraphs.pop(0)
 
 
-sourceDocument = Document(r"Docx Auto Bold\Source Document.docx")
+sourceDocument = Document("Docx Auto Bold\Source Document.docx")
 resultDocument = Document()
 resultDocument.styles["Normal"].font.name = u"宋体"
 resultDocument.styles['Normal']._element.rPr.rFonts.set(qn('w:eastAsia'), u'宋体')
@@ -65,4 +65,4 @@ paragraphs.pop(0)
 AddChoice(resultDocument, paragraphs, 248)
 AddChoice(resultDocument, paragraphs, 208)
 AddJudge(resultDocument, paragraphs, 152)
-resultDocument.save(r"Docx Auto Bold\Result Document.docx")
+resultDocument.save("Docx Auto Bold\Result Document.docx")
