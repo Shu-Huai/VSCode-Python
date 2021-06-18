@@ -444,10 +444,25 @@ print(currentDate)
 del currentDate
 print(currentDate)
 # %%
-a=(2,3)
-a[0]=10086
+a = (2, 3)
+a[0] = 10086
 # %%
 print("""adfgddg\n
 gfdvgfrdvgfr
 bgrdcv bg""")
+# %%
+inputString = input("Please input three numbers: ")
+numbers = list(map(float, inputString.split()))
+numbers.sort(key=lambda x: (x), reverse=True)
+print(numbers)
+# %%
+x = [1, 2, 1, 2, 1, 1]
+for i in x[:]:
+    if i == 1:
+        x.remove(i)
+bool(x.count(2))
+# %%
+table = "".maketrans("测试非法暴力话", "*******")
+text = "这句话里含有非法内容"
+text.translate(table)
 # %%
