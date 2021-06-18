@@ -15,41 +15,43 @@ def AddTitle(resultDocument, text, isCenter=True):
 
 
 def AddChoice(resultDocument, paragraphs, number):
-    AddTitle(resultDocument, paragraphs[0].text, False)
-    paragraphs.pop(0)
+    global index
+    AddTitle(resultDocument, paragraphs[index].text, False)
+    index += 1
     for i in range(number):
-        answers = list(re.findall("[A-Z]", str(paragraphs[0].text)))
-        resultDocument.add_paragraph(paragraphs[0].text)
-        paragraphs.pop(0)
-        temp = 0
+        answers = list(re.findall("[A-Z]", str(paragraphs[index].text)))
+        resultDocument.add_paragraph(paragraphs[index].text)
+        index += 1
+        tempIndex = index
         selections = ""
-        thisLine = str(paragraphs[0].text)
+        thisLine = str(paragraphs[index].text)
         while len(thisLine) and thisLine[0] != "【":
             selections += thisLine
-            temp += 1
-            thisLine = str(paragraphs[temp].text)
-        for j in range(temp):
-            paragraphs.pop(0)
+            tempIndex += 1
+            thisLine = str(paragraphs[tempIndex].text)
+        for j in range(tempIndex - index):
+            index += 1
         selections = list(re.findall("[A-Z][^A-Z]+", selections))
         for j in range(len(selections)):
-            temp = selections[j].strip()
+            tempIndex = selections[j].strip()
             newParagraph = resultDocument.add_paragraph()
-            if temp[0] in answers:
-                newRun = newParagraph.add_run(temp)
+            if tempIndex[0] in answers:
+                newRun = newParagraph.add_run(tempIndex)
                 newRun.font.bold = True
                 newRun.font.color.rgb = RGBColor(255, 0, 0)
             else:
-                newParagraph.add_run(temp)
+                newParagraph.add_run(tempIndex)
     resultDocument.add_paragraph()
-    paragraphs.pop(0)
+    index += 1
 
 
 def AddJudge(resultDocument, paragraphs, number):
-    AddTitle(resultDocument, paragraphs[0].text, False)
-    paragraphs.pop(0)
+    global index
+    AddTitle(resultDocument, paragraphs[index].text, False)
+    index += 1
     for i in range(number):
-        resultDocument.add_paragraph(paragraphs[0].text)
-        paragraphs.pop(0)
+        resultDocument.add_paragraph(paragraphs[index].text)
+        index += 1
 
 
 sourceDocument = Document("Docx Auto Bold\Source Document.docx")
@@ -59,9 +61,9 @@ resultDocument.styles['Normal']._element.rPr.rFonts.set(qn('w:eastAsia'), u'宋�
 resultDocument.styles["Normal"].font.size = Pt(12)
 resultDocument.styles["Normal"].font.name = "Times New Roman"
 paragraphs = list(sourceDocument.paragraphs)
-AddTitle(resultDocument, paragraphs[0].text)
-paragraphs.pop(0)
-paragraphs.pop(0)
+index = 0
+AddTitle(resultDocument, paragraphs[index].text)
+index += 2
 AddChoice(resultDocument, paragraphs, 248)
 AddChoice(resultDocument, paragraphs, 208)
 AddJudge(resultDocument, paragraphs, 152)
