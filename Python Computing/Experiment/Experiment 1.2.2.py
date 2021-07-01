@@ -1,5 +1,5 @@
-inputString = input('Please input the time with 24-hour clock, use the form as "Hour:Minute:Second": ')
-hour, minute, second = int(inputString.split(':')[0]), int(inputString.split(':')[1]), int(inputString.split(':')[2])
+inputString = input("请输入 24 小时制的时间，使用格式为“小时：分钟：秒”：")
+hour, minute, second = tuple(map(int, inputString.split('：')))
 second = second + 1
 if second == 60:
     second = 0
@@ -9,16 +9,4 @@ if second == 60:
         hour = hour + 1
         if hour == 24:
             hour = 0
-if hour < 10:
-    hour = str("0") + str(hour)
-else:
-    hour = str(hour)
-if minute < 10:
-    minute = str("0") + str(minute)
-else:
-    minute = str(minute)
-if second < 10:
-    second = str("0") + str(second)
-else:
-    second = str(second)
-print("The time after one second is: " + hour + ":" + minute + ":" + second)
+print("一秒后的时间是：" + "%02d" % hour + "：" + "%02d" % minute + "：" + "%02d" % second + "。")
