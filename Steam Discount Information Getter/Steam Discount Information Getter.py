@@ -172,7 +172,7 @@ class SteamDiscountInformationGetter(object):
         docxFile.styles["Normal"].font.name = u"宋体"
         docxFile.styles['Normal']._element.rPr.rFonts.set(qn('w:eastAsia'), u'宋体')
         docxFile.styles["Normal"].font.size = Pt(12)
-        docxFile.add_paragraph().add_run("Here is the Steam discount information for this week.").font.bold = True
+        docxFile.add_paragraph().add_run("Steam平台优惠信息").font.bold = True
         for i in range(len(games)):
             paragraph = docxFile.add_paragraph()
             paragraph.add_run("游戏：%s.\n" % games[i]["gameName"]).font.bold = True
